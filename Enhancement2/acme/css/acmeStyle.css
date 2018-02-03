@@ -1,0 +1,331 @@
+/*@import url('https://fonts.googleapis.com/css?family=Jaldi');*/
+
+/*Font usage ->   font-family: 'Jaldi', sans-serif;*/
+
+/*Template Formating*/
+.mainContainer {
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+body {
+    background-image: url(../images/site/background.jpg);
+    background-size: cover
+}
+nav {
+    background-color: #de2226;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jaldi', sans-serif;
+}
+nav ul li {
+    line-height: 2em;
+}
+nav ul li a {
+    text-decoration: none;
+    
+    color: white;
+}
+nav ul li a:hover {
+    color: orange;
+}
+nav ul li a:active {
+    font-weight: bold;
+}
+#pageTitle {
+    font-family: 'Jaldi', sans-serif;
+}
+footer {
+    text-align: center;
+    border-top: 3px solid black;
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+#pageTitle {
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 900
+}
+
+
+
+/*Home Page*/
+.homeHolder {
+    display: flex;
+    justify-content: space-between;
+}
+.featureContain {
+    margin-left: 20px;
+}
+#rocket {
+    margin-left: 10px;
+}
+.rocketButton {
+    cursor: pointer;
+    position: absolute;
+    top: 190px;
+    left: 600px;
+}
+
+.homeImage {
+    position: relative;
+    max-width: 100%;
+}
+article {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 20%;
+    font-family: 'Jaldi', sans-serif;    
+}
+article h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: 0px;
+    font-size: 25px;
+}
+article h3 {
+    margin: 0px;
+}
+/*Lower section of Home page*/
+
+.lowerHome {
+    display: flex;
+}
+.lowerHome h3 {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+}
+.rocketReviews ul {
+    margin-top: 0px;
+    font-family: 'Jaldi', sans-serif;
+}
+.featuredRecipes {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.featuredRecipes img {
+    border-style: solid;
+    border-width: 10px;
+    border-color: lightgrey;
+    margin-right: 50px;
+}
+#touchThat {
+    display: flex;
+}
+#touchThat div {
+     text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Jaldi', sans-serif;
+    margin-right: 15px;
+}
+#touchThat div:hover {
+    color: orange;
+}
+#touchThat1 {
+    display: flex;
+}
+#touchThat1 div {
+     text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Jaldi', sans-serif;
+    margin-right: 15px;
+}
+#touchThat1 div:hover {
+    color: orange;
+}
+
+
+/*Product page*/
+.productContent {
+    display: flex;
+    justify-content: space-around;
+}
+#alingment {
+    margin-left: 100px;
+}
+#productPic {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#productDesc {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 200px;
+}
+#productReviews {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+}
+#productPrice {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: darkorange;
+}
+#productMan {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+}
+
+/*Mobile Adaption*/
+
+/*Large*/
+@media (max-width: 1000px) {
+/*Nav bar*/
+    nav {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    nav ul li {
+    line-height: 2.5em;
+}
+    footer {
+        margin-bottom: 30px;
+    }
+/*Home page*/
+    #rocket {
+        height: 330px;
+    }
+    article {
+    top: 0px;
+    left: 500px;
+    width: 30%;
+}
+    .rocketButton {
+    top: 190px;
+    left: 500px;
+}
+/*Lower Home section*/
+    .rocketReviews {
+        margin-right: 10px;
+    }
+    
+.rocketReviews ul li {
+    font-size: 0.88em
+}
+/*Product page*/
+    #alingment {
+        margin-left: 0px;
+    }
+    .productContent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #productPic {
+        display: block;
+        margin: auto;
+    }
+    #productPic img {
+        height: 300px;
+    }
+    #productDesc {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+    #productReviews {
+        text-align: center;
+        font-size: 25px;
+    }
+    #productPrice {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    #productMan {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+/*Medium*/
+@media (max-width: 500px) {
+    nav ul li {
+    line-height: 3em;
+}
+    #rocket {
+        height: 190px;
+    }
+    article {
+    top: 0px;
+    left: 400px;
+    width: 30%;
+}
+    .rocketButton {
+    top: 190px;
+    left: 500px;
+}
+    
+.rocketReviews ul li {
+    
+}
+/*Lower Home page*/
+    .rocketReviews {
+        margin-right: 20px;
+        font-size: 0.5em;
+    }
+    
+    #imageAligner {
+        display: flex;
+    }
+    #imageAligner1 {
+        display: flex;
+    }
+    .featuredRecipes {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .featuredRecipes img {
+        margin-right: 0px;
+    }
+    #touchThat div {
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    #touchThat1 div {
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    
+/*Product page*/
+    
+    #productPic img {
+        height: 200px;
+    }
+    #productDesc {
+        font-size: 20px;
+        font-weight: 400; 
+    }
+    #productReviews {
+        font-size: 20px;
+    }
+    #productPrice {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    #productMan {
+        font-size: 20px;
+    }
+}
