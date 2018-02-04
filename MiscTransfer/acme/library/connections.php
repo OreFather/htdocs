@@ -12,10 +12,7 @@ $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 try {
 $link = new PDO($dsn, $username, $password, $options);
 return $link;
-} catch(PDOException $e) {
+} catch(PDOException $ex) {
 header('Location: /acme/view/500.php');
-exit;
 }
 }
-
-acmeConnect();
