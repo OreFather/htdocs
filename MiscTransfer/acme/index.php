@@ -1,11 +1,14 @@
 <?php
-require_once 'library/connections.php';
-require_once 'model/acme-model.php';
 
-$catigories = getCategoires();
 
-var_dump($categories);
-exit;
+//Main Controller
+
+session_start();
+require_once 'addons/functions.php';
+ $navList = $_SESSION['navList'];
+
+
+
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
@@ -18,6 +21,9 @@ if ($action == NULL){
 
 switch ($action){
     case 'home':
-        include 'view/home.php';
+        //include 'view/home.php';
+        header('Location: view/home.php');
         break;
+    default:
+        header('Location: view/home.php');
 }

@@ -13,6 +13,55 @@
     margin-left: 10px;
     margin-top: 10px;
 }
+#loginButton {
+    background-color: #de2226;
+    border: none;
+    text-align: center;
+    padding: 15px 32px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+#registerButton {
+     background-color: #de2226;
+    border: none;
+    text-align: center;
+    padding: 15px 32px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
+#signinButton {
+     background-color: #de2226;
+    border: none;
+    text-align: center;
+    padding: 15px 32px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
+#newButton {
+    background-color: #de2226;
+    border: none;
+    text-align: center;
+    padding: 15px 32px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
 body {
     background-image: url(../images/site/background.jpg);
     background-size: cover

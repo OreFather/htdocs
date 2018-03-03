@@ -7,7 +7,7 @@
   <meta name="description" content="Template file">
   <meta name="author" content="Colby">
 
-  <link rel="stylesheet" href="../css/acmeStyle.css">
+  <link rel="stylesheet" href="css/acmeStyle.css">
 </head>
 
 <body>
@@ -16,19 +16,34 @@
     
     <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeHeader.php'; ?>
     
-    <h1 id="pageTitle">Welcome to ACME</h1>
+    <h1 id="pageTitle">Login</h1>
     
     <div id="homePage"></div>
     <div id="mainContent">
-    
+        
+        
+  <form action="/login.php">
+  First Name:<br>
+  <input type="text" name="firstname" required>
+  <br>
+  Last Name:<br>
+  <input type="text" name="lastname" required>
+  <br>
+  Email:<br>
+  <input type="text" name="email" required>
+  <br>
+  Password:<br>
+  <input type="text" name="password" required>
+  <br><br>
+  <input type="submit" value="Login" id="newButton">
+</form> 
+        
         
     </div>
     <footer>
-        &copy;2017 ACME Inc., All rights reserved.
-        <br/>
-        All images used are belived to be in "Fair Use". Please notify the Webmaster if any are not and they will be removed.
+       <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeFooter.php'; ?>
     </footer>
-    <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeFooter.php'; ?>
+    
     </section>
     
     

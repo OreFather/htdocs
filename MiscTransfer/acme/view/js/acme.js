@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#listI4").append(json.Traps[0].name);
         console.log("JS list load complete");
         $("title").append(" Home");
-        $("#pageTitle").append("Welcome to A.C.M.E.");
+        //$("#pageTitle").append("Welcome to A.C.M.E.");
         
         $("#listI1").click(function(){
             clearSlots();

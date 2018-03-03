@@ -14,21 +14,30 @@
     
     <section class="mainContainer">
     
-    <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeHeader.php'; ?>
+    <?php 
+    session_start();
+    $navList = $_SESSION['navList'];
+    
+    include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeHeader.php'; ?>
     
     <h1 id="pageTitle">Welcome to ACME</h1>
     
     <div id="homePage"></div>
     <div id="mainContent">
-    
+        
+        
+        <form action="../model/product-model.php" method="post">
+            Category Name:<br>
+            <input type="text" name="action" required>
+                <br>
+            <input type="submit" id="newButton" value="Submit">
+        </form>
         
     </div>
     <footer>
-        &copy;2017 ACME Inc., All rights reserved.
-        <br/>
-        All images used are belived to be in "Fair Use". Please notify the Webmaster if any are not and they will be removed.
-    </footer>
     <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeFooter.php'; ?>
+    </footer>
+
     </section>
     
     

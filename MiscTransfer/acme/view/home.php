@@ -7,28 +7,19 @@
   <meta name="description" content="Template file">
   <meta name="author" content="Colby">
 
-  <link rel="stylesheet" href="css/acmeStyle.css">
+  <link rel="stylesheet" href="../css/acmeStyle.css">
 </head>
 
 <body>
     
     <main class="mainContainer">
     <header>
-    <div id="logo">
-        <img src="images/site/logo.png" alt="Logo">
-    </div>
-    
-    <nav>
-        <noscript>Javasript is needed for this site to function. Either enable it or switch to a real browser.</noscript>
-        <ul>
-            <li><a id="listI0" href="index.php">Home</a></li>    
-            <li><a id="listI1" href="#"></a></li>
-            <li><a id="listI2" href="#"></a></li>
-            <li><a id="listI3" href="#"></a></li>
-            <li><a id="listI4" href="#"></a></li>
-        </ul>
-    </nav>
-        </header>
+ <?php 
+session_start();
+ $navList = $_SESSION['navList'];
+ include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeHeader.php'; 
+ ?>
+       </header>
     <h1 id="pageTitle"></h1>
     
     <div id="homeContent">
@@ -36,9 +27,9 @@
             
             <section class="homeHolder">
                 <div id="adaptHome">  
-                    <img id="rocket" src="images/site/feature.jpg" alt="Featured Product">   
+                    <img id="rocket" src="../images/site/feature.jpg" alt="Featured Product">   
                     <article><h1>The RoadRunner Rocket</h1><h3>Highly Efficient!<br>Built-in Targeting System!<br>Launch pad included!</h3></article>
-                    <img class="rocketButton" src="images/site/iwantit.gif" alt="Purchase button">
+                    <img class="rocketButton" src="../images/site/iwantit.gif" alt="Purchase button">
                 </div>
             </section>
             
@@ -49,16 +40,16 @@
             <div class="featuredRecipes">
             <h3>Featured Recipes</h3>
                 <div id="imageAligner">
-                    <img src="images/recipes/bbqsand.jpg" alt="BBQ">
-                    <img src="images/recipes/potpie.jpg" alt="PotPie">
+                    <img src="../images/recipes/bbqsand.jpg" alt="BBQ">
+                    <img src="../images/recipes/potpie.jpg" alt="PotPie">
                 </div>
                 <a id="touchThat">
                     <div>Roadrunner BBQ</div>
                     <div>Roadrunner Pot Pie</div>
                 </a>
                 <div id="imageAligner1">
-                    <img src="images/recipes/soup.jpg" alt="Soup!">
-                    <img src="images/recipes/taco.jpg" alt="Taco">
+                    <img src="../images/recipes/soup.jpg" alt="Soup!">
+                    <img src="../images/recipes/taco.jpg" alt="Taco">
                 </div>
                 <a id="touchThat1">
                     <div>Roadrunner Soup</div>
@@ -98,9 +89,7 @@
         
     <div id="mainContent"></div>
     <footer>
-        &copy;2017 ACME Inc., All rights reserved.
-        <br/>
-        All images used are belived to be in "Fair Use". Please notify the Webmaster if any are not and they will be removed.
+    <?php include$_SERVER['DOCUMENT_ROOT'].'/acme/addons/acmeFooter.php'; ?>    
     </footer>
     
     </main>

@@ -2,7 +2,7 @@
 
 //ACME Model
 
-
+require_once 'C:\xampp\htdocs\acme\library\connections.php';
 
 function getCategories(){
 // Create a connection object from the acme connection function
